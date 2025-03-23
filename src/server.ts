@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "public"))) // Serve static files
 const server = http.createServer(app)
 const io = new Server(server, {
 	cors: {
-		origin: "http://localhost:5173",
+		origin: "https://coding-collaboration-live.vercel.app",
 		methods: ['GET', 'POST', 'PATCH', 'PUT']
 	},
 	maxHttpBufferSize: 1e8,
